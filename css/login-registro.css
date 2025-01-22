@@ -1,0 +1,201 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, rgb(176, 179, 184) 00%, rgb(42, 42, 42) 35%, rgb(27, 27, 29) 80%);
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.split-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    height: 100vh;
+    justify-content: center;
+}
+.left, .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%; /* Asegura que las secciones no se reduzcan demasiado */
+}
+
+.image {
+    width: 75%;
+    height: 90%; 
+}
+
+.imgled {
+    position: absolute;
+    width: 720PX;
+    height: 770PX;
+    z-index: 1;
+    animation: fade 1s ease-in-out infinite;
+}
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(240, 168, 48, 0.5);
+    background-color: rgba(27, 27, 29, 0.5);
+    width: 100%;
+    max-width: 400px; /* Limita el tamaño máximo de los formularios */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+}
+
+.button, .enter-button {
+    background-color: #D2232A;
+    color: #B0B3B8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-shadow: 3px 3px 7px rgba(10, 71, 169, 0.3);
+}
+
+.enter-button{
+    margin-top: 5%;
+}
+
+.button:hover, .enter-button:hover {
+    background-color: #8B2D33;
+}
+
+.form, .form-register {
+    margin-top: 20px;
+    display: none;
+    border-color: #F0A830;
+    width: 100%; /* Asegura que el formulario no se salga del contenedor */
+}
+
+.form input, .form-register input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    border-color: #F0A830;
+    background: #222;
+    color: #B0B3B8;
+    box-shadow: 3px 3px 7px rgba(10, 71, 169, 0.3);
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del input */
+}
+
+.register {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.register a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 32px;
+    color: #b0b3b8;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(10, 71, 169, 0.3);
+}
+
+/* Diseño Responsive */
+@media (max-width: 1024px) {
+    .split-container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left .image {
+        max-height: 300px;
+    }
+
+    .imgled{
+        width: 570px;
+        height: 300PX;
+    }
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .button, .enter-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 720px) {
+    .left, .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .imgled{
+        width: 320px;
+        height: 300PX;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .button, .enter-button {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .button, .enter-button {
+        font-size: 12px;
+    }
+}
+@media (max-width: 360px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .button, .enter-button {
+        font-size: 12px;
+    }
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
