@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animación de Reactor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- Agregar el audio de fondo -->
+  <audio id="background-audio" loop autoplay>
+    <source src="./audio/fondo.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+    <img src="./images/reactorring.png" alt="Anillo Exterior" class="ring">
+    
+    <img src="./images/reactorringled.png" alt="Brillo del Anillo" class="ring-glow">
+        
+    <img src="./images/reactor2.png" alt="Reactor Central" class="reactor">
+    
+    <img src="./images/reactor2led.png" alt="Brillo del Reactor" class="reactor-glow">
+
+    <img src="./images/reactor2led.png" alt="Brillo del Reactor" class="reactor-glow-color">
+    <button id="buton"><p>Click Here</p></button>
+  </div>
+
+  <script>
+    // Script para redirigir al hacer clic en el botón
+    document.getElementById("buton").addEventListener("click", () => {
+        window.location.href = "home.php"; // Cambia la URL a la página deseada
+    });
+  </script>
+</body>
+</html>
