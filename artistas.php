@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider de Imágenes con Descripción</title>
-    <link rel="stylesheet" href="./css/artistas.css">
+    <link rel="stylesheet" href="css/artistas.css">
     <link rel="icon" href="./images/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -14,7 +14,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miembros de la Empresa</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="header">
